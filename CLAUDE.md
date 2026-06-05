@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-# Dev server — run on port 4001 (4000 = Cincinnati, 3000 = Willoughby)
+# Dev server — port 4001 (3000 = Willoughby, 4000 = Cincinnati, 4001 = Cleveland)
 nohup npm run dev -- --port 4001 > /tmp/tequila-clev-dev.log 2>&1 &
 
 # Build (check for errors before committing)
@@ -20,13 +20,13 @@ npm install --cache /tmp/npm-cache
 
 ## What This Is
 
-A single-page marketing/splash site for **Tequila Fest Cincinnati** — an annual tequila festival held at Fountain Square, downtown Cincinnati. All ticket sales redirect to an external URL; this site has no e-commerce or auth.
+A single-page marketing/splash site for **Tequila Fest Cleveland** — an annual tequila festival held at Cuyahoga County Fairgrounds, Berea, OH. All ticket sales redirect to an external URL; this site has no e-commerce or auth.
 
 **Event details (update these when they change):**
-- Date: June 13, 2026, 3:00 PM – 9:00 PM
+- Date: July 25, 2026, 3:00 PM – 9:00 PM
 - Tequila sampling: 4:00 PM – 8:00 PM
-- Venue: Fountain Square, Downtown Cincinnati, OH
-- Tickets URL: `https://tequilafestusa.com/events/tequila-fest-cincinnati-2026`
+- Venue: Cuyahoga County Fairgrounds, Berea, OH
+- Tickets URL: `https://tequilafestusa.com/events/tequila-fest-cleveland-2026`
 
 ## Architecture
 
@@ -36,13 +36,13 @@ All content lives in `src/app/page.tsx` as a stack of section components importe
 
 **Section order (top to bottom):**
 1. `OfficialBanner` — sticky top bar; Código 1530 as presenting sponsor
-2. `Hero` — full-viewport background photo, logo, TEQUILA FEST headline, live countdown, confetti canvas
+2. `Hero` — full-viewport background photo (`/public/hero-bg.jpg`), logo (`/public/tequilafest_cle_logo.png`), TEQUILA FEST CLEVELAND headline, live countdown, confetti canvas
 3. `Highlights` — 4-card grid (tequilas, tacos, music, VIP)
 4. `VIPExperience` — platinum-themed section with 3D tilt cards, sparkle effects, VIP tequila brand marquee
 5. `EventDetails` — marigold strip with date/time/venue/admission
 6. `TequilaSpotlight` — scrolling marquee of 50+ general tequila brands + type breakdown
 7. `LiveMusic` — DJ Fusemania (3–6 PM) and Apostle Jones Band (6:30–9 PM) cards + schedule timeline
-8. `Gallery` — real photos/video from `/public/gallery/` with lightbox; click any item to expand
+8. `Gallery` — 10 real photos from `/public/gallery/` with lightbox; click any item to expand
 9. `EmailSignup` — red section; wired to Supabase `email_subscribers` table (guarded — works only when env vars are set)
 10. `TicketsCTA` — final full-width CTA section
 11. `Footer`
@@ -76,7 +76,7 @@ All content is hardcoded — no CMS or database for editorial content. To update
 - **VIP tequila brands:** `VIPExperience.tsx` → `vipTequilas` array (keep duplicated for marquee loop)
 - **Music lineup:** `LiveMusic.tsx`
 - **Gallery:** drop files into `/public/gallery/`, then add entries to the `media` array in `Gallery.tsx`
-- **All ticket links** point to `https://tequilafestusa.com/events/tequila-fest-cincinnati-2026` — grep for this URL if it ever changes
+- **All ticket links** point to `https://tequilafestusa.com/events/tequila-fest-cleveland-2026` — grep for this URL if it ever changes
 
 ## Environment Variables
 
@@ -89,6 +89,6 @@ Both are optional for local dev — the Supabase client in `src/lib/supabase.ts`
 
 ## Deployment
 
-- GitHub: `kingadam333/tequila-fest-cincinnati`
-- Hosted on Vercel, domain: `tequilafestcincinnati.com`
+- GitHub: `kingadam333/tequila-fest-cleveland`
+- Hosted on Vercel, domain: `tequilafestcleveland.com`
 - Push to `main` → auto-deploys
