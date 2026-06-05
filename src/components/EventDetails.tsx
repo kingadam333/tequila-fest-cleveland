@@ -12,7 +12,7 @@ const details = [
       </svg>
     ),
     label: "Date",
-    value: "June 13, 2026",
+    value: "July 25, 2026",
     sub: "Saturday",
   },
   {
@@ -34,8 +34,8 @@ const details = [
       </svg>
     ),
     label: "Location",
-    value: "Fountain Square",
-    sub: "Downtown Cleveland, OH",
+    value: "Cuyahoga County Fairgrounds",
+    sub: "Berea, OH",
   },
   {
     icon: (

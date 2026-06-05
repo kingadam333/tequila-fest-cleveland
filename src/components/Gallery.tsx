@@ -4,13 +4,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const media = [
-  { src: "/gallery/2024-06-15 15.03.59.jpg", type: "image", span: "row-span-2" },
-  { src: "/gallery/2024-06-15 15.04.44.jpg", type: "image", span: "" },
-  { src: "/gallery/2024-06-15 16.08.30.jpg", type: "image", span: "" },
-  { src: "/gallery/2024-06-15 16.11.06.mp4", type: "video", span: "row-span-2" },
-  { src: "/gallery/2024-06-15 16.15.04.jpg", type: "image", span: "" },
-  { src: "/gallery/2024-06-15 16.25.19.jpg", type: "image", span: "" },
-  { src: "/gallery/2024-06-15 16.26.50.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_2832.jpg", type: "image", span: "row-span-2" },
+  { src: "/gallery/IMG_3031.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3038.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3075.jpg", type: "image", span: "row-span-2" },
+  { src: "/gallery/IMG_3105.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3119.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3137.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3149.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_3218.jpg", type: "image", span: "row-span-2" },
+  { src: "/gallery/IMG_3225.jpg", type: "image", span: "" },
 ];
 
 function LightboxModal({ item, onClose }: { item: typeof media[0]; onClose: () => void }) {

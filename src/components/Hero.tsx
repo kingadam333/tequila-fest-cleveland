@@ -6,7 +6,7 @@ import Image from "next/image";
 import Confetti from "./Confetti";
 
 function Countdown() {
-  const eventDate = new Date("2026-06-13T15:00:00");
+  const eventDate = new Date("2026-07-25T15:00:00");
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -78,7 +78,7 @@ export default function Hero() {
           className="mb-4"
         >
           <Image
-            src="/tequilafest_cinci_logo.png"
+            src="/tequilafest_cle_logo.png"
             alt="Tequila Fest Cleveland"
             width={320}
             height={320}
