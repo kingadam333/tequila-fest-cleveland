@@ -105,7 +105,7 @@ export default function Hero() {
           className="font-display tracking-[0.3em] text-yellow-400 mt-2"
           style={{ fontSize: "clamp(1.2rem, 4vw, 3rem)" }}
         >
-          CINCINNATI
+          CLEVELAND
         </motion.h2>
 
         {/* Tagline */}
