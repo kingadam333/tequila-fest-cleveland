@@ -119,7 +119,7 @@ const eventJsonLd = {
     {
       "@type": "Offer",
       name: "General Admission",
-      url: "https://www.tequilafestusa.com/events/cleveland",
+      url: "https://www.tequilafestusa.com/events/cleveland#tickets",
       availability: "https://schema.org/InStock",
       validFrom: "2025-01-01",
       priceCurrency: "USD",
@@ -127,7 +127,7 @@ const eventJsonLd = {
     {
       "@type": "Offer",
       name: "VIP Experience",
-      url: "https://www.tequilafestusa.com/events/cleveland",
+      url: "https://www.tequilafestusa.com/events/cleveland#tickets",
       availability: "https://schema.org/InStock",
       validFrom: "2025-01-01",
       priceCurrency: "USD",
