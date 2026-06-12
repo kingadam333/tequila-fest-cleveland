@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const media = [
-  { src: "/gallery/IMG_2832.jpg", type: "image", span: "row-span-2" },
-  { src: "/gallery/IMG_3031.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3038.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3075.jpg", type: "image", span: "row-span-2" },
-  { src: "/gallery/IMG_3105.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3119.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3137.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3149.jpg", type: "image", span: "" },
-  { src: "/gallery/IMG_3218.jpg", type: "image", span: "row-span-2" },
-  { src: "/gallery/IMG_3225.jpg", type: "image", span: "" },
+  { src: "/gallery/IMG_2832.jpg", type: "image", span: "row-span-2", alt: "Tequila Fest Cleveland – guests sampling premium tequilas" },
+  { src: "/gallery/IMG_3031.jpg", type: "image", span: "", alt: "Tequila festival Cleveland – tequila tasting experience" },
+  { src: "/gallery/IMG_3038.jpg", type: "image", span: "", alt: "Tequila Fest Cleveland – live music and festival atmosphere" },
+  { src: "/gallery/IMG_3075.jpg", type: "image", span: "row-span-2", alt: "Cleveland tequila festival – crowd enjoying tequila sampling" },
+  { src: "/gallery/IMG_3105.jpg", type: "image", span: "", alt: "Tequila Fest Cleveland – VIP tequila experience" },
+  { src: "/gallery/IMG_3119.jpg", type: "image", span: "", alt: "Tequila festival near Cleveland – tacos and tequila" },
+  { src: "/gallery/IMG_3137.jpg", type: "image", span: "", alt: "Tequila Fest Cleveland – Cuyahoga County Fairgrounds Berea OH" },
+  { src: "/gallery/IMG_3149.jpg", type: "image", span: "", alt: "Cleveland tequila tasting event – premium tequila brands" },
+  { src: "/gallery/IMG_3218.jpg", type: "image", span: "row-span-2", alt: "Tequila Fest Cleveland – live music and dancing" },
+  { src: "/gallery/IMG_3225.jpg", type: "image", span: "", alt: "Tequila festival Cleveland Ohio – summer festival fun" },
 ];
 
 function LightboxModal({ item, onClose }: { item: typeof media[0]; onClose: () => void }) {
@@ -46,7 +46,7 @@ function LightboxModal({ item, onClose }: { item: typeof media[0]; onClose: () =
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={item.src}
-            alt="Festival photo"
+            alt={item.alt}
             className="w-full max-h-[85vh] rounded-xl object-contain"
           />
         )}
@@ -111,7 +111,7 @@ export default function Gallery() {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={item.src}
-                  alt="Festival photo"
+                  alt={item.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               )}

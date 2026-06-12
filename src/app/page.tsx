@@ -13,6 +13,15 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main>
+      {/* SEO: keyword-rich description for search engines and AI crawlers */}
+      <p className="sr-only">
+        Tequila Fest Cleveland is the premier tequila festival near Cleveland, Ohio — the ultimate
+        tequila event for anyone searching for tequila near me in the greater Cleveland area.
+        Join us July 25, 2026 at Cuyahoga County Fairgrounds in Berea, OH for a tequila festival
+        featuring 50+ tequila brands, authentic tacos, live music, and VIP tequila experiences.
+        Whether you&apos;re looking for a tequila tasting near me, a tequila festival near me, or
+        the best tequila event in Cleveland, Tequila Fest Cleveland is the answer.
+      </p>
       <OfficialBanner />
       <Hero />
       <Highlights />
