@@ -192,6 +192,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-6F1HY40K7T" />
+        <Script id="google-tag" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6F1HY40K7T');
+        `}</Script>
         <Script
           id="event-jsonld"
           type="application/ld+json"
