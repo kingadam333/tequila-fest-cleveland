@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
 
-export const alt = "Tequila Fest Cleveland 2026 – July 25 at Cuyahoga County Fairgrounds";
+export const alt = "Tequila Fest Cleveland 2027 – July 24 at Cuyahoga County Fairgrounds";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -129,7 +129,7 @@ export default function Image() {
               color: "rgba(255,255,255,0.92)",
             }}
           >
-            July 25, 2026 · Cuyahoga County Fairgrounds · Berea, OH
+            July 24, 2027 · Cuyahoga County Fairgrounds · Berea, OH
           </div>
 
           {/* Highlights */}

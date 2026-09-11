@@ -12,7 +12,7 @@ const details = [
       </svg>
     ),
     label: "Date",
-    value: "July 25, 2026",
+    value: "July 24, 2027",
     sub: "Saturday",
   },
   {

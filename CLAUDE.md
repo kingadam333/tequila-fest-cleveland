@@ -25,7 +25,7 @@ A single-page marketing/splash site for **Tequila Fest Cleveland** — an annual
 **All three city sites (Cincinnati, Cleveland, Columbus) share identical design, layout, and components. Only the city-specific content differs: event date, venue, logo, hero image, gallery photos, and ticket URLs. Cincinnati (`/Users/adambossin/Sites/tequila-fest-cincinnati`) is the design source of truth.**
 
 **Event details:**
-- Date: July 25, 2026, 3:00 PM – 9:00 PM
+- Date: July 24, 2027, 3:00 PM – 9:00 PM
 - Tequila sampling: 4:00 PM – 8:00 PM
 - Venue: Cuyahoga County Fairgrounds, Berea, OH
 - Ticket URL: `https://www.tequilafestusa.com/events/cleveland#tickets`
@@ -122,7 +122,7 @@ Camerena · Avion · Gran Coramino · 1800 · Jose Cuervo · Gran Centenario · 
 ## Content Updates
 
 All content is hardcoded — no CMS. To update:
-- **Event date/countdown:** `Hero.tsx` → `eventDate` constant (`new Date("2026-07-25T15:00:00")`)
+- **Event date/countdown:** `Hero.tsx` → `eventDate` constant (`new Date("2027-07-24T15:00:00")`)
 - **Hero date/venue display:** `Hero.tsx` → the date/time/venue info row below the tagline
 - **Event details strip:** `EventDetails.tsx` → `details` array
 - **Hero city name:** `Hero.tsx` → the `CLEVELAND` text in the h2

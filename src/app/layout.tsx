@@ -8,11 +8,11 @@ const OG_IMAGE = `${SITE_URL}/opengraph-image`;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Tequila Fest Cleveland 2026 | July 25 · Cuyahoga County Fairgrounds",
+    default: "Tequila Fest Cleveland 2027 | July 24 · Cuyahoga County Fairgrounds",
     template: "%s | Tequila Fest Cleveland",
   },
   description:
-    "Cleveland's biggest tequila festival. July 25, 2026 at Cuyahoga County Fairgrounds, Berea OH. Sample 50+ premium tequilas, enjoy authentic tacos, live music by Apostle Jones Band & DJ Fusemania. VIP packages available.",
+    "Cleveland's biggest tequila festival. July 24, 2027 at Cuyahoga County Fairgrounds, Berea OH. Sample 50+ premium tequilas, enjoy authentic tacos, live music by Apostle Jones Band & DJ Fusemania. VIP packages available.",
   keywords: [
     "tequila near me",
     "tequila cleveland",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "tequila festival",
     "Tequila Fest Cleveland",
     "tequila festival Cleveland Ohio",
-    "Cleveland tequila event 2026",
+    "Cleveland tequila event 2027",
     "tequila tasting near me",
     "tequila tasting Cleveland",
     "tequila festival near me",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     "Cuyahoga County Fairgrounds events",
     "Berea Ohio festival",
     "Cleveland food and drink festival",
-    "Cleveland summer festival 2026",
-    "things to do in Cleveland July 2026",
+    "Cleveland summer festival 2027",
+    "things to do in Cleveland July 2027",
     "Apostle Jones Band",
     "DJ Fusemania",
     "VIP tequila experience",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Tequila Fest Cleveland 2026 | July 25 · Cuyahoga County Fairgrounds",
+    title: "Tequila Fest Cleveland 2027 | July 24 · Cuyahoga County Fairgrounds",
     description:
-      "Sample 50+ premium tequilas, enjoy authentic tacos & live music at Cleveland's biggest tequila festival. July 25, 2026 · Berea, OH. Get tickets now!",
+      "Sample 50+ premium tequilas, enjoy authentic tacos & live music at Cleveland's biggest tequila festival. July 24, 2027 · Berea, OH. Get tickets now!",
     siteName: "Tequila Fest Cleveland",
     locale: "en_US",
     images: [
@@ -70,15 +70,15 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Tequila Fest Cleveland 2026 – July 25 at Cuyahoga County Fairgrounds",
+        alt: "Tequila Fest Cleveland 2027 – July 24 at Cuyahoga County Fairgrounds",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tequila Fest Cleveland 2026 | July 25 · Berea, OH",
+    title: "Tequila Fest Cleveland 2027 | July 24 · Berea, OH",
     description:
-      "50+ tequilas · tacos · live music. Cleveland's biggest tequila festival is July 25, 2026. Get your tickets!",
+      "50+ tequilas · tacos · live music. Cleveland's biggest tequila festival is July 24, 2027. Get your tickets!",
     images: [OG_IMAGE],
     creator: "@TequilaFestUSA",
     site: "@TequilaFestUSA",
@@ -95,12 +95,12 @@ export const metadata: Metadata = {
 const eventJsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Tequila Fest Cleveland 2026",
+  name: "Tequila Fest Cleveland 2027",
   description:
     "Cleveland's biggest tequila festival featuring 50+ premium tequila brands, authentic tacos, live music, and VIP experiences. Presented by Código 1530.",
   url: SITE_URL,
-  startDate: "2026-07-25T15:00:00-04:00",
-  endDate: "2026-07-25T21:00:00-04:00",
+  startDate: "2027-07-24T15:00:00-04:00",
+  endDate: "2027-07-24T21:00:00-04:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
